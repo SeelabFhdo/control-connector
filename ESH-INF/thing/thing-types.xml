@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="mqttcontrol"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+        xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+    <!-- Sample Thing Type -->
+    <thing-type id="broker">
+        <label>MQTTControl Binding Thing</label>
+        <description>Sample thing for MQTTControl Binding</description>
+        <config-description>
+        <parameter name="url" type="text" required="true">
+            <label>IP-Adresse</label>
+            <description>IP or domain of the MQTT-Broker.
+           </description>
+        </parameter>
+        <parameter name="instancename" type="text" required="true">
+            <label>Name</label>
+            <description>Name of the instance
+           </description>
+        </parameter>
+        <parameter name="username" type="text" required="true">
+            <label>Username</label>
+            <description>Username
+           </description>
+        </parameter>
+        <parameter name="password" type="text" required="true">
+            <label>Password</label>
+            <description>Password
+           </description>
+        </parameter>
+        <parameter name="certPath" type="text" required="true">
+            <label>Name</label>
+            <description>Name of the instance
+           </description>
+        </parameter>
+        
+    </config-description>
+    </thing-type>
+
+
+</thing:thing-descriptions>
